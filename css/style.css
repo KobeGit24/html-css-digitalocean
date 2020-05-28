@@ -1,0 +1,59 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 15px;
+  font-family: Roboto;
+}
+
+.nav {
+  min-height: 100px;
+  line-height: 100px;
+}
+
+#h-nav .logo {
+  width: auto;
+  height: 100%;
+}
+
+li{
+  display: inline-block;
+}
+
+.navigation,
+.sign-up {
+  line-height: 110px;
+}
+
+li a {
+  text-decoration: none;
+  color: darkgrey;
+}
+
+nav {
+  display: inline-block;
+}
+
+.menu-hamb {
+  display: none;
+}
+
+.login {
+  display: inline-block;
+}
+
+ @media all and (max-width: 1199px) {
+  .navigation,
+  .sign-up {
+    display: none;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .menu-hamb {
+    display: block;
+  }
+}
