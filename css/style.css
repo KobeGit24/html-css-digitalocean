@@ -19,7 +19,8 @@ body {
   height: 100%;
 }
 
-li{
+li,
+nav {
   display: inline-block;
 }
 
@@ -40,10 +41,6 @@ li a {
 li a:hover {
   color: #006aff;
   text-decoration: none;
-}
-
-nav {
-  display: inline-block;
 }
 
 .menu-hamb {
