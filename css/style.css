@@ -45,14 +45,14 @@ nav {
   display: inline-block;
 }
 
- @media all and (max-width: 1199px) {
+  @media all and (max-width: 1199px) {
   .navigation,
   .sign-up {
     display: none;
   }
 }
 
-@media all and (max-width: 992px) {
+@media all and (max-width: 1198px) {
   .menu-hamb {
     display: block;
   }
