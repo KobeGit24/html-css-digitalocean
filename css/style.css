@@ -14,8 +14,8 @@ body {
   line-height: 100px;
 }
 
-#h-nav .logo {
-  width: auto;
+#h-nav .logo img {
+  width: 100%;
   height: 100%;
 }
 
@@ -30,7 +30,16 @@ li{
 
 li a {
   text-decoration: none;
-  color: darkgrey;
+  color: rgba(0, 0, 0, 0.84);
+  padding: 0 15px;
+  text-transform: capitalize;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+li a:hover {
+  color: #006aff;
+  text-decoration: none;
 }
 
 nav {
@@ -41,11 +50,50 @@ nav {
   display: none;
 }
 
-.login {
-  display: inline-block;
+.fa-bars {
+  font-size: 20px;
 }
 
-  @media all and (max-width: 1199px) {
+.login {
+  display: inline-block;
+  padding: 0 10px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.login span a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.84);
+  padding: 0 15px;
+  transition: all 0.2s;
+}
+
+.login span a:hover {
+  color: #006aff;
+}
+
+.login .h-btn {
+  color: #006aff;
+  border: 1px solid #006aff;
+  font-weight: bold;
+  padding: 8px;
+  transition: all 0.3s;
+}
+
+.login .h-btn:hover {
+  color: #fff;
+  background-color: #006aff;
+}
+
+.menu-hamb {
+  display: none;
+}
+
+.fa-bars {
+  font-size: 20px;
+}
+
+@media all and (max-width: 1199px) {
   .navigation,
   .sign-up {
     display: none;
