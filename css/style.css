@@ -12,11 +12,17 @@ body {
 .nav {
   min-height: 100px;
   line-height: 100px;
+  background-color: #fff;
 }
 
 #h-nav .logo img {
   width: 100%;
   height: 100%;
+}
+
+#h-nav {
+  min-height: 120px;
+  line-height: 120px;
 }
 
 li,
@@ -90,6 +96,36 @@ li a:hover {
   font-size: 20px;
 }
 
+#jumbotron {
+  background-image: url(../img/jumbo.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+  position: relative;
+}
+
+#jumbotron .h-title {
+  padding-left: 0;
+  color: #fff;
+}
+
+#jumbotron .h-title .h-jumbo {
+  padding: 25% 0;
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: bold;
+}
+
+#jumbotron .h-title .h-jumbo p {
+  font-size: 24px;
+  font-family: italic;
+  margin-top: 15px;
+}
+
+
 @media all and (max-width: 1199px) {
   .navigation,
   .sign-up {
@@ -100,5 +136,9 @@ li a:hover {
 @media all and (max-width: 1198px) {
   .menu-hamb {
     display: block;
+  }
+  #h-nav .logo img {
+    width: auto;
+    height: auto;
   }
 }
