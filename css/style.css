@@ -7,6 +7,7 @@
 body {
   font-size: 15px;
   font-family: Roboto;
+  height: 2000px;
 }
 
 .nav {
@@ -21,8 +22,11 @@ body {
 }
 
 #h-nav {
-  min-height: 120px;
-  line-height: 120px;
+  min-height: 110px;
+}
+
+.navbar-fixed-top {
+  background-color: #fff;
 }
 
 li,
@@ -101,8 +105,7 @@ li a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 500px;
-  position: relative;
+  min-height: 800px;
 }
 
 #jumbotron .h-title {
@@ -110,12 +113,15 @@ li a:hover {
   color: #fff;
 }
 
-#jumbotron .h-title .h-jumbo {
-  padding: 25% 0;
+#jumbotron .h-title .h-jumbo,
+#jumbotron .h-register .h-started  {
+  min-height: 400px;
+  margin: 200px 0;
 }
 
+
 h1 {
-  font-size: 70px;
+  font-size: 60px;
   font-weight: bold;
 }
 
@@ -123,6 +129,14 @@ h1 {
   font-size: 24px;
   font-family: italic;
   margin-top: 15px;
+}
+
+.h-register {
+  padding-right: 0;
+}
+
+.h-started {
+  background-color: #fff;
 }
 
 
@@ -137,8 +151,17 @@ h1 {
   .menu-hamb {
     display: block;
   }
+
   #h-nav .logo img {
     width: auto;
     height: auto;
+  }
+
+}
+
+@media all and (max-width: 991px) {
+  #jumbotron .h-register .h-started  {
+    height: 150;
+    margin-top: 5px;
   }
 }
