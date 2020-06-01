@@ -10,8 +10,6 @@ body {
   height: 4000px;
 }
 
-/* #00d7d2 */
-
 .nav {
   min-height: 100px;
   line-height: 100px;
@@ -328,7 +326,7 @@ h3 span {
   height: 500px;
 }
 
-.fa-chevron-left,
+#designed .fa-chevron-left,
 .fa-chevron-right {
   font-weight: 900;
   font-size: 25px;
@@ -342,7 +340,101 @@ h3 span {
   color: #006aff;
 }
 
+#features {
+  padding: 40px 0;
+}
 
+#features h3 {
+  font-size: 30px;
+}
+
+#features img {
+  width: auto;
+  height: auto;
+}
+
+#features .feat-list h5 {
+  color: #031b4e;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#features .feat-list p {
+  font-family: italic;
+  color: #5b6987;
+  font-weight: bold;
+}
+
+#features .feat-list {
+  min-height: 150px;
+  padding-bottom: 20px;
+}
+
+#features .feat-list a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  color: #006aff;
+  transition: all 0.1s;
+}
+
+#features .feat-list a:hover {
+  color: rgb(10, 72, 231);
+}
+
+#features .feat-list .fa-chevron-right {
+  font-size: 13px;
+}
+
+#world {
+  background: #031b4e url(../img/data-center-map.svg);
+  padding: 40px 0;
+  min-height: 600px;
+}
+
+#world h3 {
+  font-size: 30px;
+  color: #fff;
+}
+
+#world p {
+  font-size: 20px;
+  font-family: italic;
+  color: #fff;
+}
+
+#world p a {
+  text-decoration: none;
+  color: #006aff;
+  transition: all 0.1s;
+}
+
+#world p a:hover {
+  color: rgb(10, 72, 231);
+}
+
+#world .w-table {
+  margin-top: 40px;
+}
+
+#world .w-table {
+    color: #fff;
+}
+
+#world .w-table span a {
+  text-decoration: none;
+  color: #00d7d2;
+}
+
+#world .w-table span a .fa-chevron-right {
+  font-size: 13px;
+}
+
+#world .w-table .left,
+#world .w-table .center,
+#world .w-table .right {
+  width: calc(100%/3);
+}
 
 /* inizio media-query */
 
