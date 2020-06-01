@@ -10,10 +10,13 @@ body {
   height: 2000px;
 }
 
+/* #00d7d2 */
+
 .nav {
   min-height: 100px;
   line-height: 100px;
   background-color: #fff;
+  position: relative;
 }
 
 #h-nav .logo img {
@@ -29,17 +32,21 @@ body {
   background-color: #fff;
 }
 
-li,
+#h-nav li,
 nav {
   display: inline-block;
 }
 
-.navigation,
+#h-nav .navigation,
 .sign-up {
   line-height: 110px;
 }
 
-li a {
+.sign-up {
+  padding-right: 0;
+}
+
+#h-nav li a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.84);
   padding: 0 15px;
@@ -48,7 +55,7 @@ li a {
   transition: all 0.2s;
 }
 
-li a:hover {
+#h-nav li a:hover {
   color: #006aff;
   text-decoration: none;
 }
@@ -105,7 +112,6 @@ li a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 800px;
 }
 
 #jumbotron .h-title {
@@ -115,18 +121,13 @@ li a:hover {
 
 #jumbotron .h-title .h-jumbo,
 #jumbotron .h-register .h-started  {
-  min-height: 400px;
-  margin: 200px 0;
+  margin: 22% 0;
 }
 
 
-h1 {
-  font-size: 60px;
-  font-weight: bold;
-}
 
 #jumbotron .h-title .h-jumbo p {
-  font-size: 24px;
+  font-size: 22px;
   font-family: italic;
   margin-top: 15px;
 }
@@ -137,8 +138,115 @@ h1 {
 
 .h-started {
   background-color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  padding-bottom: 15px;
 }
 
+h1 {
+  font-size: 55px;
+  font-weight: bold;
+}
+
+h3 {
+  color: #031b4e;
+  font-weight: bold;
+  padding: 20px;
+}
+
+h3 span {
+  color: #006aff;
+  padding-top: 10px;
+}
+
+.jumbo-form {
+  padding: 10px 10px;
+}
+
+
+.jumbo-btn {
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.jumbo-btn:first-of-type {
+  background-color: #006aff;
+  color: #fff;
+}
+
+.jumbo-btn:first-of-type:hover {
+  background-color: #fff;
+  color: #006aff;
+  border: 1px solid #006aff;
+}
+
+#term {
+  font-family: italic;
+}
+
+#term a {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+#customer {
+  background-color: #f3f5f9;
+  padding: 40px 0;
+}
+
+#customer p {
+  font-weight: bold;
+  padding: 20px 0;
+}
+
+#customer img {
+  width: auto;
+  height: auto;
+}
+
+#customer .brand {
+  padding: 20px 0 20px 30px;
+  text-align: center;
+}
+
+#customer .customer-link {
+  padding: 20px 0;
+}
+
+#customer .customer-link a {
+  color: #006aff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+#customer .customer-link a:hover {
+  color: #031b4e;
+}
+
+.fa-chevron-right {
+  padding-left: 10px;
+}
+
+.dep-title h3 {
+  font-size: 30px;
+}
+
+.dep-title p {
+  font-size: 18px;
+  font-family: italic;
+  font-weight: bold;
+}
+
+.debug {
+  background-color: red;
+  border: 1px solid black;
+  height: 200px;
+}
+
+/* inizio media-query */
 
 @media all and (max-width: 1199px) {
   .navigation,
@@ -157,11 +265,21 @@ h1 {
     height: auto;
   }
 
+  #jumbotron .h-title .h-jumbo,
+  #jumbotron .h-register .h-started  {
+    margin: 5% 0;
+  }
 }
 
 @media all and (max-width: 991px) {
+  #jumbotron .h-title .h-jumbo,
   #jumbotron .h-register .h-started  {
-    height: 150;
-    margin-top: 5px;
+    margin: 5% 0;
+    text-align: center;
   }
+
+  #customer .brand {
+    padding: 10px 0;
+  }
+}
 }
