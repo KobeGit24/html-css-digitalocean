@@ -7,7 +7,7 @@
 body {
   font-size: 15px;
   font-family: Roboto;
-  height: 2000px;
+  height: 4000px;
 }
 
 /* #00d7d2 */
@@ -48,7 +48,7 @@ nav {
 
 #h-nav li a {
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.84);
+  color: hsl(221,93%,16%);
   padding: 0 15px;
   text-transform: capitalize;
   font-weight: bold;
@@ -121,7 +121,7 @@ nav {
 
 #jumbotron .h-title .h-jumbo,
 #jumbotron .h-register .h-started  {
-  margin: 22% 0;
+  margin: 25% 0;
 }
 
 
@@ -199,6 +199,7 @@ h3 span {
 #customer p {
   font-weight: bold;
   padding: 20px 0;
+  color: #5b6987;
 }
 
 #customer img {
@@ -230,21 +231,118 @@ h3 span {
   padding-left: 10px;
 }
 
-.dep-title h3 {
+#deploy {
+  padding: 40px 0;
+}
+
+#deploy .dep-title h3 {
   font-size: 30px;
 }
 
-.dep-title p {
-  font-size: 18px;
+#deploy .dep-title p {
+  font-size: 20px;
   font-family: italic;
+  color: #5b6987;
+}
+
+#deploy .dep-list,
+.dep-item {
+  margin-top: 40px;
+}
+
+#deploy nav ul {
+  list-style: none;
+}
+
+#deploy nav ul li {
+  padding: 12px;
+  border-left: 2px solid rgba(3, 27, 78, 0.6);
+}
+
+#deploy nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  color: rgba(3, 27, 78, 0.6);
+  transition: all 0.2s;
+}
+
+#deploy nav ul li a:hover {
+  color: rgba(3, 27, 78, 1);
+}
+
+#deploy nav ul li:hover {
+  border-left: 2px solid rgba(3, 27, 78, 1);
+}
+
+#deploy .dep-list img {
+  width: auto;
+  height: auto;
+}
+
+#deploy .dep-list h5 {
+  color: #031b4e;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#deploy .dep-list p {
+  font-family: italic;
+  color: #5b6987;
   font-weight: bold;
 }
 
-.debug {
-  background-color: red;
-  border: 1px solid black;
-  height: 200px;
+#deploy .dep-list .dep-minisec {
+  min-height: 150px;
 }
+
+#designed {
+  background-color: #f3f5f9;
+  padding: 40px 0;
+}
+
+#designed h3 {
+  font-size: 30px;
+  padding-bottom: 0;
+}
+
+#designed .des-title p {
+  font-size: 20px;
+  font-family: italic;
+  color: #5b6987;
+  margin-bottom: 30px;
+}
+
+#designed .des-final p {
+  padding-top: 20px;
+  padding-bottom: 0;
+  font-weight: bold;
+  color: #031b4e;
+}
+
+#designed .carousel {
+  background-image: url(../img/carousel-img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+  font-weight: 900;
+  font-size: 25px;
+}
+
+#designed .c-icon {
+  line-height: 500px;
+}
+
+.fa-circle {
+  color: #006aff;
+}
+
+
 
 /* inizio media-query */
 
@@ -281,5 +379,8 @@ h3 span {
   #customer .brand {
     padding: 10px 0;
   }
-}
+
+  #deploy .dep-list:last-of-type {
+    margin-top: 15px;
+  }
 }
