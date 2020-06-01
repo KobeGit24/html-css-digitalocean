@@ -549,6 +549,44 @@ h3 span {
   font-size: 16px;
 }
 
+#get-started {
+  background-color: #0069ff;
+  min-height: 200px;
+}
+
+#get-started h2 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 200px;
+}
+
+#get-started .create-account {
+  line-height: 220px;
+}
+
+#get-started .create-account .s-btn {
+  color: #0069ff;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 18px;
+  border-radius: 6px;
+  transition: all 0.3s
+}
+
+#get-started .create-account .s-btn:hover {
+  background-color: #0069ff;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+
+
+
+
+
+
+
 
 /* inizio media-query */
 
@@ -588,5 +626,11 @@ h3 span {
 
   #deploy .dep-list:last-of-type {
     margin-top: 15px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  #get-started .get-start{
+    text-align: center;
   }
 }
