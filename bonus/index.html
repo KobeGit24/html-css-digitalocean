@@ -26,7 +26,18 @@
                   <div class="col-xs-0 col-md-0 col-lg-6 navigation text-center">
                     <nav>
                       <ul>
-                        <li> <a href="#">Products <i class="fas fa-caret-down"></i></a> </li>
+                        <li>
+                          <a id="dLabel" data-target="#" href="http://example.com/" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            Products <i class="fas fa-caret-down"></i>
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="dLabel">
+                            <h5>featured product</h5>
+                            <li>
+                              <strong>Droplets</strong> <br>
+                              Scalable compute Services
+                             </li>
+                          </ul>
+                        </li>
                         <li> <a href="#">Customers</a> </li>
                         <li> <a href="#">Community <i class="fas fa-caret-down"></i></a> </li>
                         <li> <a href="#">Pricing</a> </li>
@@ -184,13 +195,11 @@
           <div class="row">
             <div class="col-xs-12 col-md-12 col-lg-8 col-lg-offset-2">
               <div id="mycarousel" class="carousel slide" data-ride="carousel" data-interval="10000" data-pause="hover">
-                <!-- Indicators -->
                 <ol class="carousel-indicators">
                   <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
                   <li data-target="#mycarousel" data-slide-to="1"></li>
                   <li data-target="#mycarousel" data-slide-to="2"></li>
                 </ol>
-                <!-- Wrapper for slides -->
                 <div class="carousel-inner">
                   <div class="item active">
                     <img src="img/carousel-img.jpg" alt="">
@@ -202,7 +211,6 @@
                     <img src="img/carousel-img3.png" alt="">
                   </div>
                 </div>
-                <!-- Controls -->
                 <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
                   <span class="glyphicon glyphicon-chevron-left"></span>
                 </a>
@@ -444,13 +452,11 @@
           <div class="row">
             <div class="col-xs-12 col-md-12 col-lg-10 col-lg-offset-1">
               <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="10000" data-pause="hover">
-                <!-- Indicators -->
                 <ol class="carousel-indicators">
                   <li data-target="#carousel" data-slide-to="0" class="active"></li>
                   <li data-target="#carousel" data-slide-to="1"></li>
                   <li data-target="#carousel" data-slide-to="2"></li>
                 </ol>
-                <!-- Wrapper for slides -->
                 <div class="carousel-inner">
                   <div class="item active">
                     <div class="rockerbox text-center">
@@ -492,7 +498,6 @@
                     </div>
                   </div>
                 </div>
-                <!-- Controls -->
                 <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
                   <span class="glyphicon glyphicon-chevron-left"></span>
                 </a>

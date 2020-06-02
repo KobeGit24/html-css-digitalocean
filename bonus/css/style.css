@@ -96,6 +96,10 @@ nav {
   display: none;
 }
 
+.menu-hamb #collapseExample li {
+  display: block;
+}
+
 .fa-bars {
   font-size: 20px;
 }
