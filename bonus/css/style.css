@@ -296,6 +296,24 @@ h3 span {
   padding: 40px 0;
 }
 
+#designed .glyphicon {
+  color: rgb(255, 0, 0);
+}
+
+#mycarousel .carousel-indicators li {
+  background-color: rgba(3, 27, 78, 1);
+  border: 1px solid #006aff;
+}
+
+#mycarousel .carousel-indicators .active {
+  background-color:  #006aff;
+  border: 2px solid rgba(3, 27, 78, 1);
+}
+
+.carousel-inner {
+  background-color: #f3f5f9;
+}
+
 #designed h3 {
   font-size: 30px;
   padding-bottom: 0;
@@ -305,36 +323,17 @@ h3 span {
   font-size: 20px;
   font-family: italic;
   color: #5b6987;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+}
+
+#designed .des-final {
+  padding-top: 30px;
 }
 
 #designed .des-final p {
-  padding-top: 20px;
-  padding-bottom: 0;
   font-weight: bold;
   color: #031b4e;
-}
-
-#designed .carousel {
-  background-image: url(../img/carousel-img.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 500px;
-}
-
-#designed .fa-chevron-left,
-.fa-chevron-right {
-  font-weight: 900;
-  font-size: 25px;
-}
-
-#designed .c-icon {
-  line-height: 500px;
-}
-
-.fa-circle {
-  color: #006aff;
+  font-size: 16px;
 }
 
 #features {
