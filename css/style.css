@@ -583,64 +583,64 @@ h3 span {
 /* INIZIO FOOTER  */
 
 
-#footer {
+#f-section {
   background-color: hsl(220,95%,8%);
   padding: 40px 0;
 }
 
-#footer h5 {
+#f-section h5 {
   color: #fff;
   font-weight: bold;
   font-size: 16px;
 }
 
-#footer nav ul {
+#f-section nav ul {
   list-style: none;
 }
 
-#footer nav ul li {
+#f-section nav ul li {
   padding: 7px 0;
 }
 
-#footer nav ul li a {
+#f-section nav ul li a {
   text-decoration: none;
   color: hsla(0,0%,100%,0.5);
   font-size: 14px;
 }
 
-#footer nav ul li a:hover {
+#f-section nav ul li a:hover {
   color: #fff;
 }
 
-#footer .f-contact {
+#f-section .f-contact {
   padding-bottom: 25px;
   border-bottom: 1px solid hsla(0,0%,100%,0.5);
 }
 
-#footer .f-info {
+#f-section .f-info {
   min-height: 120px;
   line-height: 120px;
 }
 
-#footer .f-logo img {
+#f-section .f-logo img {
   width: auto;
   height: auto;
 }
 
-#footer .f-logo .copyright {
+#f-section .f-logo .copyright {
   padding-left: 10px;
   color: hsla(0,0%,100%,0.5);
   font-size: 15px;
 }
 
-#footer .f-social a {
+#f-section .f-social a {
   text-decoration: none;
   padding: 0 5px;
   font-size: 22px;
   color: hsla(0,0%,100%,0.5);
 }
 
-#footer .f-social a:hover {
+#f-section .f-social a:hover {
   color: #fff;
 }
 
@@ -700,13 +700,13 @@ h3 span {
     margin-top: 15px;
   }
 
-  #footer .f-info {
+  #f-section .f-info {
     text-align: center;
     height: 50px;
     line-height: 70px;
   }
 
-  #footer .f-info .f-social {
+  #f-section .f-info .f-social {
     text-align: center;
   }
 }
