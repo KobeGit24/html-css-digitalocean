@@ -7,7 +7,6 @@
 body {
   font-size: 15px;
   font-family: Roboto;
-  height: 6000px;
 }
 
 .nav {
@@ -38,10 +37,6 @@ nav {
 #h-nav .navigation,
 .sign-up {
   line-height: 110px;
-}
-
-.sign-up {
-  padding-right: 0;
 }
 
 #h-nav li a {
@@ -122,16 +117,14 @@ nav {
   margin: 25% 0;
 }
 
-
+#jumbotron .h-jumbo {
+  padding-left: 0;
+}
 
 #jumbotron .h-title .h-jumbo p {
   font-size: 22px;
   font-family: italic;
   margin-top: 15px;
-}
-
-.h-register {
-  padding-right: 0;
 }
 
 .h-started {
@@ -172,6 +165,7 @@ h3 span {
 .jumbo-btn:first-of-type {
   background-color: #006aff;
   color: #fff;
+  transition: all 0.3s;
 }
 
 .jumbo-btn:first-of-type:hover {
@@ -188,6 +182,10 @@ h3 span {
   text-decoration: underline;
   font-weight: bold;
 }
+
+
+/* INIZIO MAIN */
+
 
 #customer {
   background-color: #f3f5f9;
@@ -550,7 +548,9 @@ h3 span {
 }
 
 #get-started {
-  background-color: #0069ff;
+  background-image: url(../img/bg-home-cta.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 200px;
 }
 
@@ -581,10 +581,69 @@ h3 span {
 }
 
 
+/* INIZIO FOOTER  */
 
 
+#footer {
+  background-color: hsl(220,95%,8%);
+  padding: 40px 0;
+}
 
+#footer h5 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
 
+#footer nav ul {
+  list-style: none;
+}
+
+#footer nav ul li {
+  padding: 7px 0;
+}
+
+#footer nav ul li a {
+  text-decoration: none;
+  color: hsla(0,0%,100%,0.5);
+  font-size: 14px;
+}
+
+#footer nav ul li a:hover {
+  color: #fff;
+}
+
+#footer .f-contact {
+  padding-bottom: 25px;
+  border-bottom: 1px solid hsla(0,0%,100%,0.5);
+}
+
+#footer .f-info {
+  min-height: 200px;
+  line-height: 200px;
+}
+
+#footer .f-logo img {
+  width: auto;
+  height: auto;
+}
+
+#footer .f-logo .copyright {
+  padding-left: 10px;
+  color: hsla(0,0%,100%,0.5);
+  font-size: 15px;
+}
+
+#footer .f-social a {
+  text-decoration: none;
+  padding: 0 5px;
+  font-size: 22px;
+  color: hsla(0,0%,100%,0.5);
+}
+
+#footer .f-social a:hover {
+  color: #fff;
+}
 
 
 
@@ -595,29 +654,36 @@ h3 span {
   .sign-up {
     display: none;
   }
-}
+  #h-nav .logo img {
+    width: 50%;
+    height: 50%;
+  }
 
-@media all and (max-width: 1198px) {
   .menu-hamb {
     display: block;
-  }
-
-  #h-nav .logo img {
-    width: auto;
-    height: auto;
-  }
-
-  #jumbotron .h-title .h-jumbo,
-  #jumbotron .h-register .h-started  {
-    margin: 5% 0;
   }
 }
 
 @media all and (max-width: 991px) {
-  #jumbotron .h-title .h-jumbo,
-  #jumbotron .h-register .h-started  {
-    margin: 5% 0;
+  #jumbotron .h-title,
+  #jumbotron .h-register {
     text-align: center;
+  }
+
+  #jumbotron .h-title h1 {
+    font-size: 40px;
+  }
+
+  #jumbotron .h-title .h-jumbo p {
+    font-size: 20px;
+  }
+
+  #jumbotron .h-register h3 {
+    font-size: 22px;
+  }
+
+  #term {
+    font-size: 13px;
   }
 
   #customer .brand {
@@ -626,6 +692,16 @@ h3 span {
 
   #deploy .dep-list:last-of-type {
     margin-top: 15px;
+  }
+
+  #footer .f-info {
+    text-align: center;
+    height: 50px;
+    line-height: 70px;
+  }
+
+  #footer .f-info .f-social {
+    text-align: center;
   }
 }
 
