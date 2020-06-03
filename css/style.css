@@ -435,6 +435,10 @@ h3 span {
   margin: 0 2px;
 }
 
+#world .cities:last-child {
+  border-bottom: none;
+}
+
 #world .cities .code {
   padding-left: 0;
 }
